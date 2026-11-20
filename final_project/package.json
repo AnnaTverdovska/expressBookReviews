@@ -1,19 +1,22 @@
 {
   "name": "bookshop",
-  "version": "1.0.1",
-  "description": "",
+  "version": "1.1.0",
+  "description": "A REST API for browsing books and writing reviews, with registration and login",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js"
+    "start": "node index.js",
+    "dev": "node --watch index.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=22"
   },
   "keywords": [],
-  "author": "",
-  "license": "MIT",
+  "author": "AnnaTverdovska",
+  "license": "Apache-2.0",
   "dependencies": {
-    "express": "^4.18.1",
-    "express-session": "^1.17.3",
-    "jsonwebtoken": "^8.5.1",
-    "nodemon": "^2.0.19"
+    "express": "^5.3.0",
+    "express-session": "^1.19.0",
+    "jsonwebtoken": "^9.0.3"
   }
 }
